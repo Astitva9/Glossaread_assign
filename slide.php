@@ -183,7 +183,7 @@ if(isset($_FILES['pfile'])){
     
   if(empty($errors)==true){
 
-    $file_dest="/home/astitva/Desktop/pdfs/".$file_name;
+    $file_dest="pdfs/".$file_name;
 
     move_uploaded_file($file_tmp, $file_dest);
    
