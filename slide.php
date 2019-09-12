@@ -183,7 +183,7 @@ if(isset($_FILES['pfile'])){
     
   if(empty($errors)==true){
 
-    $file_dest="pdfs/".$file_name;
+    $file_dest="/Glossaread_assign/pdfs/".$file_name;
 
     move_uploaded_file($file_tmp, $file_dest);
    
@@ -254,7 +254,7 @@ if(isset($_FILES['pfile'])){
                 $img -> SaveAs ( $imgindex."jpg" ) ;
 
                 ?>
-                  <img src="/glossaread_assignment/<?php echo $imgindex."jpg";?>">
+                  <img src="/Glossaread_assign/<?php echo $imgindex."jpg";?>">
                 <?php
               }
            ?>
